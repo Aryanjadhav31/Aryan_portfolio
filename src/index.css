@@ -1,37 +1,30 @@
 @import "tailwindcss";
 
-/* ✅ Normal background */
 body {
   background: #0d0d0d;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-/* ✅ Light mode fix */
 .light body {
   @apply text-gray-900 bg-gray-100;
 }
 
-/* ✅ Section layout – bigger container, no unnecessary shrink */
+/* Make every section centered and clean */
 section {
-  @apply w-full max-w-5xl px-6 py-20 mx-auto text-center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @apply max-w-4xl px-6 py-20 mx-auto text-center;
 }
 
-/* ✅ About/Content boxes */
 .box {
-  @apply p-8 border shadow-xl rounded-2xl transition-all bg-[#0F1B2B] border-white/10 text-gray-300;
-  width: 100%;
+  @apply p-8 transition-all border shadow-xl rounded-2xl;
+
+  /* Dark mode */
+  @apply dark:bg-[#0f1b2b] dark:border-white/10 dark:text-gray-300;
+
+  /* Light mode */
+  @apply bg-[#f1f5f9] border-black/10 text-gray-700;
 }
 
-/* ✅ Gradient animation */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -43,45 +36,60 @@ section {
   animation: gradientFlow 6s ease infinite;
 }
 
-/* ✅ Force-wrap content only for small phones */
+drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]
+
 @media (max-width: 640px) {
-  #education h3, #education p, #education ul,
+  #education h3, #education p, #education ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
   #experience div {
     text-align: center;
   }
-
+}
+@media (max-width: 480px) {
   #hero h1 {
     line-height: 1.2;
   }
+}
 
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
   section {
     margin-top: 30px;
     margin-bottom: 30px;
-    @apply px-4 py-16;
-  }
-
-  .box {
-    @apply p-6 mx-2;
   }
 }
 
-/* ✅ Very small phone polish */
-@media (max-width: 480px) {
-  .box {
-    @apply mx-3;
-  }
-}
-
-/* ✅ IMPORTANT: Prevent only horizontal slide without breaking scrolling */
 html, body {
-  overflow-x: hidden;  /* block left/right swipe */
-  overflow-y: auto;    /* keep scroll working */
+  overflow-x: hidden;   /* block ONLY horizontal movement */
+  overflow-y: auto;     /* allow vertical scroll */
   width: 100%;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* ✅ Never shrink text, only stop containers from overflowing */
-img, div, nav, main {
-  max-width: 100%;
+* {
+  max-width: 100vw;     /* no element can expand beyond screen */
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
