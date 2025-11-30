@@ -68,15 +68,20 @@ section {
 }
 
 html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-width: 100%;
+  overflow-x: hidden;   /* block ONLY horizontal movement */
+  overflow-y: auto;     /* allow vertical scroll */
   width: 100%;
-  height: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+* {
+  max-width: 100vw;     /* no element can expand beyond screen */
+  box-sizing: border-box;
+}
+
 
 
 body {
