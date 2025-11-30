@@ -1,58 +1,37 @@
 @import "tailwindcss";
 
-html, body {
-  overflow-x: hidden;  /* 🚫 Stop horizontal sliding */
-  overflow-y: auto;    /* ✅ Allow vertical scroll */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Don't restrict text, only containers */
-img, div, section, nav {
-  max-width: 100%;
-}
-
-/* Global background (won't affect scrolling) */
+/* ✅ Normal background */
 body {
   background: #0d0d0d;
   color: white;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Section layout optimized for all screens */
+/* ✅ Light mode fix */
+.light body {
+  @apply text-gray-900 bg-gray-100;
+}
+
+/* ✅ Section layout – bigger container, no unnecessary shrink */
 section {
   @apply w-full max-w-5xl px-6 py-20 mx-auto text-center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* Reduce section spacing for phones */
-@media (max-width: 640px) {
-  section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    @apply px-4 py-16;
-  }
-}
-
-/* About box safe spacing */
+/* ✅ About/Content boxes */
 .box {
-  @apply p-8 border shadow-xl rounded-2xl transition-all bg-[#0f1b2b] border-white/10 text-gray-300;
-  margin-top: 3rem;  /* ✅ Prevent heading from touching box */
+  @apply p-8 border shadow-xl rounded-2xl transition-all bg-[#0F1B2B] border-white/10 text-gray-300;
+  width: 100%;
 }
 
-/* Stack boxes clean on small phones */
-@media (max-width: 480px) {
-  .box {
-    @apply p-6 mx-2;
-  }
-}
-
-/* Gradient animation utility */
+/* ✅ Gradient animation */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -64,7 +43,7 @@ section {
   animation: gradientFlow 6s ease infinite;
 }
 
-/* Center text inside small sections */
+/* ✅ Force-wrap content only for small phones */
 @media (max-width: 640px) {
   #education h3, #education p, #education ul,
   #experience div {
@@ -74,4 +53,35 @@ section {
   #hero h1 {
     line-height: 1.2;
   }
+
+  section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @apply px-4 py-16;
+  }
+
+  .box {
+    @apply p-6 mx-2;
+  }
+}
+
+/* ✅ Very small phone polish */
+@media (max-width: 480px) {
+  .box {
+    @apply mx-3;
+  }
+}
+
+/* ✅ IMPORTANT: Prevent only horizontal slide without breaking scrolling */
+html, body {
+  overflow-x: hidden;  /* block left/right swipe */
+  overflow-y: auto;    /* keep scroll working */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ✅ Never shrink text, only stop containers from overflowing */
+img, div, nav, main {
+  max-width: 100%;
 }
