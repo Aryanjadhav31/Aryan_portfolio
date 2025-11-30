@@ -93,3 +93,6 @@ body {
     font-size: 18px;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
