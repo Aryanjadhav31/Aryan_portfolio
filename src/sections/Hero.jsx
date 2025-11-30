@@ -2,9 +2,8 @@ import { Mail, Linkedin, Github, FileText, Terminal } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section
-      className="relative flex flex-col items-center justify-center min-h-screen px-6 overflow-hidden text-center"
-    >
+    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center w-full max-w-[100vw] overflow-x-hidden">
+
       {/* PROFILE IMAGE – PREMIUM GLOW */}
       <div className="relative flex justify-center mt-12 mb-16 md:mt-8">
 
@@ -20,16 +19,18 @@ export default function Hero() {
           alt="Aryan"
           className="relative z-10 object-cover w-52 h-52 md:w-72 md:h-72 rounded-full shadow-[0_0_60px_#00C8FF]"
         />
+
       </div>
 
       {/* MAIN HEADING */}
       <h1
-        className="mb-10 font-extrabold text-center text-transparent 
-                   bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text leading-tight
-                   text-[38px] sm:text-[46px] md:text-[58px]"
-      >
-        Hi, I am Aryan Jadhav
-      </h1>
+  className="mb-10 font-extrabold text-center text-transparent 
+             bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text leading-tight
+             text-[38px] sm:text-[46px] md:text-[58px]"
+>
+  Hi, I am Aryan Jadhav
+</h1>
+
 
       {/* SUB HEADING */}
       <p className="mt-0 mb-4 text-xl text-gray-300 md:text-2xl -translate-y-1.5">
@@ -38,6 +39,7 @@ export default function Hero() {
 
       {/* RECTANGLE BUTTONS */}
       <div className="flex flex-wrap justify-center gap-4 mt-10">
+
         {/* RESUME */}
         <a
           href="/Aryan_Jadhav_Resume.docx"
@@ -77,7 +79,9 @@ export default function Hero() {
           <Terminal size={22} className="text-[#d0dbdb]" />
           <span className="font-medium text-white">TryHackMe</span>
         </a>
+
       </div>
+
     </section>
   );
 }

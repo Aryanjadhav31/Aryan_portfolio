@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     
-    <section id="skills">
+    <section id="skills" className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center w-full max-w-[100vw] overflow-x-hidden">
 
 
       {/* HEADING */}

@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <section id="education" className="px-5 py-16 sm:px-6 md:px-20">
+    <section id="education" className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center w-full max-w-[100vw] overflow-x-hidden">
 
       {/* SECTION HEADING */}
       <h2 className="mb-8 text-3xl font-bold text-center text-transparent sm:text-4xl md:text-4xl bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text">

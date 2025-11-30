@@ -28,7 +28,7 @@ export default function Certifications() {
       organization: "Zscaler",
       disambiguation: "certificate files",
       icon: Cloud,
-      live: "/colud security zscaler.pdf",
+      live: "/cloud security zscaler.pdf",
     },
     {
       name: "Database Management Systems – NPTEL",
@@ -40,7 +40,7 @@ export default function Certifications() {
   ];
 
   return (
-    <section id="certifications">
+    <section id="certifications" className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center w-full max-w-[100vw] overflow-x-hidden">
 
       {/* SECTION HEADING */}
       <h2 className="mb-10 text-4xl font-bold text-center text-transparent bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text">
