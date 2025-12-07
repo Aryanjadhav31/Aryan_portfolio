@@ -16,13 +16,15 @@ export default function About() {
       <div className="w-full bg-[#0f1b2b] rounded-2xl p-8 shadow-xl border border-white/10">
 
   <p className="mb-6 leading-relaxed text-left text-gray-300 sm:mb-5">
-I am a Computer Science & Engineering student at Rajarambapu Institute of Technology, driven by the genuine enjoyment of building secure, production-ready software rather than simply completing requirements. My primary focus areas are backend systems, APIs, databases, and full-stack applications, which is where conceptual ideas are successfully engineered into tangible products. Complementing this development focus, I prioritize cybersecurity, viewing the study of exploitation techniques as a crucial step toward building robust, well-defended, and resilient technical systems.  </p>
+I am a Computer Science & Engineering student at Rajarambapu Institute of Technology with a strong interest in building secure, production-ready software. I focus on backend development, APIs, databases, and full-stack applications, while also prioritizing cybersecurity to create robust and resilient systems.
+ </p>
 
   <p className="mb-6 leading-relaxed text-left text-gray-300 sm:mb-5">
-My approach to skill development is intensely practical, moving beyond pure theory and embracing a "figure it out by doing" mindset through hands-on work. I thrive in team environments, actively leading clubs and participating in hackathons, convinced that skills are magnified and accelerated when shared with peers who possess similar enthusiasm. This collaborative experience has instilled essential non-technical qualities such as patience, effective communication, and the responsibility required to ship functional work, even when perfection is out of reach.  </p>
+I follow a hands-on, learning-by-doing approach and thrive in collaborative team environments. Through leading clubs and participating in hackathons, I’ve developed strong communication, patience, and the responsibility to deliver real, functional results.</p>
 
   <p className="mb-6 leading-relaxed text-left text-gray-300 sm:mb-5">
-The driving force behind my creativity and perspective is cinema, which acts as the core of my personal life and inspiration. I connect deeply with diverse genres, from raw love stories that capture complex human emotions to strategic, high-stakes spy and war thrillers. These stories offer an authentic lens on reality, spanning individual psychological depth to global conflict strategy. My ultimate goal is to translate this authentic perspective into my own work, ensuring that my technical and creative output feels real and resonates deeply with everyone who interacts with it.  </p>
+Cinema is at the heart of my creative inspiration, influencing my love for emotional storytelling, thrillers, and vlogging. I blend this passion into my work and content so it feels real and deeply resonant.
+</p>
 
   
 
