@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="absolute w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-cyan-500/25 blur-[90px] rounded-full"></div>
         <div className="absolute w-44 h-44 sm:w-52 sm:h-52 md:w-72 md:h-72 border-4 border-cyan-400 shadow-[0_0_35px_rgba(0,200,255,0.5)] rounded-full"></div>
         <img
-          src="/profile.jpeg"
+          src="/profile.png"
           alt="Aryan"
           className="relative z-10 object-cover 
                      w-56 h-56 sm:w-64 sm:h-64  /* 📱 BIGGER on mobile */
