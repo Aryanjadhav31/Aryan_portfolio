@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="flex flex-row flex-wrap justify-center items-center gap-5 mt-4 w-full
                       max-[768px]:flex-col max-[768px]:gap-4 max-[768px]:w-full">
 
-        <a href="/Aryan_Jadhav_Resume.docx" download
+        <a href="/Aryan_Jadhav.docx" download
            className="flex items-center justify-center gap-2 px-5 py-4 text-sm sm:text-base md:text-lg bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition text-white max-[768px]:w-[80%]">
           <FileText size={18} />
           <span>Resume</span>
